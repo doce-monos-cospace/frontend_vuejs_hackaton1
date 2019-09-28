@@ -4,7 +4,12 @@
       <div class="timer-content-left w-100">
         <div class="d-flex">
           <!--NOMBRE TAREA Y TIEMPO-->
-          <p class="w-100" :contenteditable="contentEditable" @blur="setTaskName">{{ taskName }}</p>
+          <p
+            class="w-100"
+            :contenteditable="contentEditable"
+            @keyup="setTaskName"
+            @blur="updateTaskName"
+          >{{ taskName }}</p>
           <div class="date button-timer flex-shrink-1">{{ taskTime }}</div>
         </div>
       </div>
@@ -78,7 +83,8 @@ import { log } from "util";
 export default {
   name: "ListItem",
   data: () => ({
-    contentEditable: true
+    contentEditable: true,
+    updatedTaskName: ""
   }),
   props: {
     taskName: {
@@ -93,8 +99,11 @@ export default {
   },
   methods: {
     setTaskName: /*async*/ function() {
-      console.log("This changes task name");
+      console.log("This changes the updated task name");
       //const newTaskName = await put('https://docemonos-hackaton-node.herokuapp.com/',)
+    },
+    updateTaskName: function() {
+        console.log("This updates the task name in the API");
     },
     pauseTask: function() {
       console.log("This pauses the task");
