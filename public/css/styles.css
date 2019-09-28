@@ -1,0 +1,198 @@
+#login {
+  background: rgb(0, 183, 234);
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    rgb(0, 183, 234) 0%,
+    rgb(0, 94, 196) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgb(0, 183, 234) 0%,
+    rgb(0, 94, 196) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgb(0, 183, 234) 0%,
+    rgb(0, 94, 196) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00b7ea', endColorstr='#005ec4', GradientType=0);
+  /* IE6-9 */
+  height: 100vh;
+  padding-top: 20vh;
+}
+
+#login h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#login h3,
+#login label {
+  color: white;
+}
+
+#login button[type='submit'] {
+  width: 100%;
+  background-color: white;
+}
+
+/***/
+
+header {
+  background-color: rgb(0, 183, 234);
+}
+
+header .nav-link,
+header .nav-link.active {
+  color: white;
+  background: transparent;
+  font-weight: 600;
+}
+
+header .nav-link:hover {
+  border-bottom: 1px solid #333;
+  border-radius: 0px;
+  margin-top: -1px;
+  color: #333;
+}
+
+body {
+  background-color: #fcfcfc;
+}
+
+.timer,
+.timer-list-item {
+  /*background-color: red;*/
+  background: #ffffff;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
+  padding: 16px 28px;
+  margin-bottom: 48px;
+}
+
+.timer-list-item {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.timer.list {
+  padding: 0px;
+}
+
+.timer-content p {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  line-height: 48px;
+  margin-bottom: 0px;
+}
+
+.button-timer {
+  font-family: 'San Francisco';
+  font-weight: 400;
+  font-size: 16px;
+  padding: 12px 16px;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: right;
+  line-height: 21px;
+  border: 1px solid rgba(255, 255, 255);
+  background-color: transparent;
+}
+
+.border-timer {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.border-timer-error {
+  color: #e02020;
+  border: 1px solid #e02020;
+  border-radius: 4px;
+}
+
+.timer-button-play:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.timer-button-stop {
+  display: none;
+}
+
+.timer-button-stop:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.timer-content-buttons {
+  height: 48px;
+}
+
+.timer-content-buttons > * > * {
+  margin-right: 20px;
+}
+
+.timer-content-buttons > * > *:last-child {
+  margin-right: 0px;
+}
+
+.timer-button-moreInfo {
+  padding-top: 12px;
+}
+
+.timer-button-type-countdown:hover #button-countdown-unselect {
+  fill: #6dd400;
+  fill-opacity: 1;
+  cursor: pointer;
+}
+
+.timer-button-type-normal:hover #button-clok-unselect {
+  fill: #6dd400;
+  fill-opacity: 1;
+  cursor: pointer;
+}
+
+.timer-button-moreInfo:hover #timer {
+  fill: #6dd400;
+  cursor: pointer;
+}
+
+h2 {
+  padding: 0px 28px;
+  font-family: 'San Francisco';
+  font-weight: 500;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: left;
+  line-height: 48px;
+}
+
+.timer-list-item {
+  margin-top: 1px;
+  padding: 0px 28px;
+}
+
+.timer-content p:focus,
+.timer-list-item p:focus,
+.button-timer:focus {
+  outline: none;
+}
+
+.timer-list-item:hover {
+  background-color: #fcfcfc;
+}
+
+.timer-list-item .timer-button-play:hover #button-action-play {
+  fill: #6dd400;
+  fill-opacity: 1 !important;
+  cursor: pointer;
+}
+
+.timer-list:not(:first-child) {
+  margin-top: 48px;
+}
