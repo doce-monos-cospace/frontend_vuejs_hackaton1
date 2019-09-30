@@ -10,6 +10,7 @@ module.exports = {
     'max-len': 'off',
     'import/prefer-default-export': 'off',
     radix: 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
   parserOptions: {
     parser: 'babel-eslint',
