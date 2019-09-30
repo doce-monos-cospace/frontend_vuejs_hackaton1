@@ -1,6 +1,6 @@
 {
-  "name": "frontend_vuejs_hackaton1",
-  "short_name": "frontend_vuejs_hackaton1",
+  "name": "doce_monos_time_tracking",
+  "short_name": "Doce Monos Time-Tracking",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
