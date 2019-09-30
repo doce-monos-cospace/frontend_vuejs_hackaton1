@@ -15,4 +15,7 @@ module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
   },
+  globals: {
+    workbox: true,
+  },
 };
